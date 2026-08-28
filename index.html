@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashmate - Campus delivery</title>
+  <meta name="description" content="Campus delivery, powered by students." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Dashmate home"><span class="brand-mark">d</span><span>dashmate</span></a>
+      <div class="location"><span class="pin">⌖</span><span><small>DELIVERING TO</small><strong>Hostel 7, Room 214</strong></span><span class="chevron">⌄</span></div>
+      <div class="top-actions"><button class="icon-btn" aria-label="Search">⌕</button><button class="avatar" aria-label="Open profile">AM</button></div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">THURSDAY · 12:42 PM <span class="live-dot"></span> CAMPUS IS MOVING</p>
+          <h1>Hungry?<br /><em>We’re close.</em></h1>
+          <p class="hero-sub">Food, groceries, and the little things — brought to your door by someone who gets campus life.</p>
+          <div class="search-box"><span>⌕</span><input type="text" placeholder="What do you need today?" aria-label="Search for items" /><kbd>⌘ K</kbd></div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a campus delivery bag">
+          <div class="sun-disc"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="bag"><div class="bag-handle"></div><div class="bag-label">DASH<br />MATE</div><div class="bag-stripe"></div></div>
+          <span class="float-note note-one">still warm <b>✦</b></span><span class="float-note note-two">₹0 delivery <b>↗</b></span>
+        </div>
+      </section>
+
+      <section class="section-wrap quick-section">
+        <div class="section-heading"><div><p class="eyebrow">CURATED FOR YOU</p><h2>What’s the move?</h2></div><a href="#categories">View all <span>↗</span></a></div>
+        <div class="category-grid" id="categories">
+          <a class="category active" href="late-night-bites.html"><span class="category-icon">🍜</span><span>Late-night<br />bites</span><span class="category-arrow">↗</span></a>
+          <a class="category" href="study-fuel.html"><span class="category-icon">🥤</span><span>Study fuel</span><span class="category-arrow">↗</span></a>
+          <a class="category" href="pantry-rescue.html"><span class="category-icon">🧺</span><span>Pantry<br />rescue</span><span class="category-arrow">↗</span></a>
+          <a class="category" href="forgot-something.html"><span class="category-icon">🧴</span><span>Forgot<br />something?</span><span class="category-arrow">↗</span></a>
+        </div>
+      </section>
+
+      <section class="section-wrap nearby-section">
+        <div class="section-heading"><div><p class="eyebrow">ON CAMPUS NOW</p><h2>Good stuff, nearby.</h2></div><button class="filter-btn">Filters <span>≡</span></button></div>
+        <div class="store-grid">
+          <article class="store-card featured" data-store="noodle"><div class="store-image noodles"><span class="delivery-time">12–18 MIN</span><button class="heart" aria-label="Save Noodle Theory">♡</button></div><div class="store-info"><div><h3>Noodle Theory</h3><p>Indo-Chinese · Momos · ₹</p></div><span class="rating">★ 4.8</span></div><div class="store-foot"><span>Student-run kitchen</span><div class="card-actions"><button class="menu-btn">View menu <span>→</span></button></div></div></article>
+          <article class="store-card" data-store="market"><div class="store-image market"><span class="delivery-time">10–15 MIN</span><button class="heart" aria-label="Save The Corner Market">♡</button></div><div class="store-info"><div><h3>The Corner Market</h3><p>Kirana · Snacks · ₹₹</p></div><span class="rating">★ 4.6</span></div><div class="store-foot"><span>Best for the basics</span><div class="card-actions"><button class="menu-btn">View menu <span>→</span></button></div></div></article>
+          <article class="store-card" data-store="coffee"><div class="store-image coffee"><span class="delivery-time">8–12 MIN</span><button class="heart" aria-label="Save Northside Coffee">♡</button></div><div class="store-info"><div><h3>Northside Coffee</h3><p>Chai · Coffee · Bakery · ₹</p></div><span class="rating">★ 4.9</span></div><div class="store-foot"><span>Open until 2 AM</span><div class="card-actions"><button class="menu-btn">View menu <span>→</span></button></div></div></article>
+          <article class="store-card" data-store="thali"><div class="store-image thali"><span class="delivery-time">14–19 MIN</span><button class="heart" aria-label="Save Ghar Ka Tiffin">♡</button></div><div class="store-info"><div><h3>Ghar Ka Tiffin</h3><p>North Indian · Thali · ₹₹</p></div><span class="rating">★ 4.7</span></div><div class="store-foot"><span>Homestyle, every day</span><div class="card-actions"><button class="menu-btn">View menu <span>→</span></button></div></div></article>
+          <article class="store-card" data-store="dosa"><div class="store-image dosa"><span class="delivery-time">11–17 MIN</span><button class="heart" aria-label="Save Dosa Department">♡</button></div><div class="store-info"><div><h3>Dosa Department</h3><p>South Indian · Breakfast · ₹</p></div><span class="rating">★ 4.8</span></div><div class="store-foot"><span>Crisp till late</span><div class="card-actions"><button class="menu-btn">View menu <span>→</span></button></div></div></article>
+          <article class="store-card" data-store="juice"><div class="store-image juice"><span class="delivery-time">7–12 MIN</span><button class="heart" aria-label="Save Fresh Press">♡</button></div><div class="store-info"><div><h3>Fresh Press</h3><p>Juices · Shakes · Snacks · ₹</p></div><span class="rating">★ 4.6</span></div><div class="store-foot"><span>Made to order</span><div class="card-actions"><button class="menu-btn">View menu <span>→</span></button></div></div></article>
+        </div>
+      </section>
+      <section class="section-wrap supermarket-section">
+        <div class="section-heading"><div><p class="eyebrow">GROCERIES IN A FLASH</p><h2>Supermarket, sorted.</h2></div><span class="speed-badge">EVERYTHING UNDER 20 MIN</span></div>
+        <div class="supermarket-grid">
+          <article class="supermarket-card pantry-card"><div class="supermarket-copy"><span class="supermarket-tag">STUDENT FAVORITE</span><h3>Campus Pantry</h3><p>Maggi, namkeen, cold drinks, and the emergency snacks hostel life demands.</p><strong>10–15 min · Free delivery</strong><a class="shop-btn" href="campus-pantry.html">Shop essentials <span>→</span></a></div><div class="pantry-visual"><span>🥛</span><span>🍌</span><span>🍪</span><span>🥫</span></div></article>
+          <article class="supermarket-card quick-card"><div class="supermarket-copy"><span class="supermarket-tag">NEED IT NOW?</span><h3>QuickStop Market</h3><p>Toiletries, chargers, medicines, and last-minute supplies for campus life.</p><strong>8–12 min · Free delivery</strong><a class="shop-btn" href="quickstop-market.html">Shop essentials <span>→</span></a></div><div class="quick-visual">20<br /><small>MIN<br />MAX</small></div></article>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-bar" aria-live="polite"><div class="cart-status"><span class="cart-count">0</span><span><strong>Your bag is empty</strong><small>Add something good to get started</small></span></div><div class="cart-total">₹0.00 <button class="checkout-btn" disabled>View bag <span>→</span></button></div></aside>
+    <div class="modal-backdrop" hidden>
+      <section class="modal bag-modal" role="dialog" aria-modal="true" aria-labelledby="bag-title">
+        <div class="modal-head"><div><p class="eyebrow">YOUR ORDER</p><h2 id="bag-title">Your bag</h2></div><button class="close-modal" aria-label="Close bag">×</button></div>
+        <div class="bag-items"></div>
+        <div class="order-summary"><div><span>Subtotal</span><strong class="summary-subtotal">₹0.00</strong></div><div><span>Campus delivery</span><strong class="summary-delivery">₹0.00</strong></div><div class="summary-total"><span>Total</span><strong class="summary-total-value">₹0.00</strong></div></div>
+        <button class="primary-action payment-trigger">Continue to payment <span>→</span></button>
+      </section>
+      <section class="modal payment-modal" role="dialog" aria-modal="true" aria-labelledby="payment-title" hidden>
+        <div class="modal-head"><div><p class="eyebrow">SECURE CHECKOUT</p><h2 id="payment-title">Pay &amp; place order</h2></div><button class="close-modal" aria-label="Close payment">×</button></div>
+        <div class="checkout-delivery"><span class="delivery-icon">⌖</span><div><small>DELIVERING TO</small><strong>Hostel 7, Room 214</strong></div><button>Change</button></div>
+        <form class="payment-form">
+          <label>Card details<input required type="text" inputmode="numeric" placeholder="1234  5678  9012  3456" maxlength="19" /></label>
+          <div class="form-row"><label>Expiry<input required type="text" placeholder="MM / YY" maxlength="7" /></label><label>CVC<input required type="text" inputmode="numeric" placeholder="123" maxlength="3" /></label></div>
+          <label>Name on card<input required type="text" placeholder="Alex Morgan" /></label>
+          <label class="save-card"><input type="checkbox" checked /> Save card for next time</label>
+          <div class="pay-total"><span>Total due</span><strong class="payment-total-value">$0.00</strong></div>
+          <button class="primary-action" type="submit">Place order <span>→</span></button>
+          <p class="secure-note">⌁ Payments are encrypted and secure</p>
+        </form>
+      </section>
+      <section class="modal confirmation-modal" role="dialog" aria-modal="true" aria-labelledby="confirmation-title" hidden>
+        <div class="confirmation-mark">✓</div><p class="eyebrow">ORDER CONFIRMED</p><h2 id="confirmation-title">You’re all set.</h2><p class="confirmation-copy">Your order is on its way to Hostel 7. We’ll let you know when your student runner is close.</p><div class="eta-card"><span>ARRIVING IN</span><strong>12–18 min</strong><small>Order #DM-2048</small></div><button class="primary-action close-confirmation">Back to home <span>↗</span></button></section>
+      <section class="modal menu-modal" role="dialog" aria-modal="true" aria-labelledby="menu-title" hidden>
+        <div class="modal-head"><div><p class="eyebrow">STUDENT-RUN KITCHEN</p><h2 id="menu-title">Menu</h2></div><button class="close-modal" aria-label="Close menu">×</button></div>
+        <div class="menu-list"></div>
+      </section>
+    </div>
+    <nav class="bottom-nav"><a class="selected" href="#top"><span>⌂</span>Home</a><a href="#categories"><span>◌</span>Browse</a><a href="#top"><span>⌁</span>Orders</a><a href="#top"><span>◯</span>Profile</a></nav>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
